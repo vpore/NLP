@@ -66,6 +66,7 @@ class preprocessing:
 
     def process(self, nrows=10, skiprows=[]):
         df = pd.read_csv('news.csv', skiprows=skiprows, nrows=nrows)
+        # dataset - https://www.kaggle.com/datasets/pratul007/indian-express-scraped-dataset-for-last-one-year
         raw = list(df['Headline'])
         corpus = []
         stop_words = set(stopwords.words('english'))

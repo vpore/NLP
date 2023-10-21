@@ -13,6 +13,7 @@ from nltk import pos_tag
 from nltk.corpus import wordnet
 
 df = pd.read_csv('fifa_world_cup_2022_tweets.csv')
+# dataset - https://www.kaggle.com/datasets/tirendazacademy/fifa-world-cup-2022-tweets
 
 print('2022 Fifa worldcup tweets dataset with the shape of', df.shape)
 print(df.sample(5))
